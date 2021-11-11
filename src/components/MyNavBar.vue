@@ -17,6 +17,11 @@
         <div class="navbar-nav">
           <router-link class="nav-link" to="/">Home</router-link>
         </div>
+        <div class="navbar-nav">
+          <router-link class="nav-link" :to="{ name: 'festivals_index' }"
+            >Festivals</router-link
+          >
+        </div>
       </div>
     </div>
   </nav>
@@ -24,7 +29,7 @@
 
 <script>
 export default {
-  name: "MyNavBar"
+  name: "MyNavBar",
 };
 </script>
 
